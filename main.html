@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Information</title>
+  </head>
+
+  <body>
+    <div class="info_form">
+      <form action method="post">
+        Full Name<br>
+        <input type="text" name="first_name" required placeholder="First Name" />
+        <input type="text" name="last_name" required placeholder="Last Name" />
+        <br>
+        Age
+        <br>
+        <input type="text" name="age" required />
+        <br>
+        Country
+        <br>
+        <input type="text" name="country" required />
+        <br>
+        Self Introduction
+        <br>
+        <textarea name="intro" rows="10" cols="50" style="resize: none" required></textarea>
+        <br>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <div class="result">
+      <h1 class="result_header">
+        Your Information
+      </h1>
+      <?php
+            include "server.php";
+            ?>
+    </div>
+  </body>
+</html>
